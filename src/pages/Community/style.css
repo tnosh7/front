@@ -1,0 +1,10 @@
+#com-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.com-container {
+  width: 1200px;
+  display: flex;
+}

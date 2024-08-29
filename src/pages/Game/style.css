@@ -1,0 +1,10 @@
+#game-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.game-container {
+  width: 1200px;
+  display: flex;
+}

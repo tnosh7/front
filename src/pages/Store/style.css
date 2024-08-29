@@ -1,0 +1,10 @@
+#store-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.store-container {
+  width: 1200px;
+  display: flex;
+}
