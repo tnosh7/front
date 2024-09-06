@@ -6,7 +6,7 @@ import { COM_PATH, GAME_PATH, NEWS_PATH, STORE_PATH } from "../../constants";
 import "./style.css";
 
 export default function Header() {
-  const [selectedNavButton, setSelectedNavButton] = useState<string>(
+  const [selectedNavButton, setSelectedNavButton] = useState(
     () => localStorage.getItem("selectedNavButton") || ""
   );
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ export default function Header() {
     setSelectedNavButton("");
   };
 
-  const onNavButtonClickHandler = (selectedNavButton: string) => {
+  const onNavButtonClickHandler = (selectedNavButton) => {
     setSelectedNavButton(selectedNavButton);
     navigate(`${selectedNavButton}`);
   };

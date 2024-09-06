@@ -1,10 +1,5 @@
-type NavButtonProps = {
-  isSelected: boolean;
-  onSelect: () => void;
-  title: string;
-};
-
-const NavButton = ({ isSelected, onSelect, title }: NavButtonProps) => {
+const NavButton = (props) => {
+  const { isSelected, onSelect, title } = props;
   return (
     <li>
       <button className={isSelected ? "active" : undefined} onClick={onSelect}>
