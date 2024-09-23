@@ -1,0 +1,92 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.input-container {
+  background: rgba(91, 53, 107, 0.5);
+  padding: 11px 16px 11px 11px;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 17px;
+
+  border-radius: 3px;
+}
+
+.input-container-error {
+  border: 1px solid rgba(255, 0, 0, 0.7);
+  background: rgba(91, 53, 107, 0.5);
+  padding: 11px 16px 11px 11px;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 3px;
+}
+
+.input {
+  border: none;
+  background: none;
+  outline: none;
+
+  flex: 1;
+
+  color: rgba(220, 222, 223, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.input-message {
+  color: rgba(255, 0, 0, 0.7);
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: rgba(91, 53, 107, 0.5);
+  gap: 10px;
+}
+
+#searchInput select {
+  border: none;
+  background: rgba(91, 53, 107, 0.5);
+  outline: none;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+#searchInput input {
+  border: none;
+  background: none;
+  outline: none;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+#searchInput .icon-box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
