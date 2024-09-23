@@ -1,5 +1,5 @@
 body {
-  background: rgba(27, 40, 56, 1);
+  background: rgb(91, 53, 107, 1);
   margin: 0;
   padding: 0;
 }
@@ -10,7 +10,89 @@ body {
 * {
   box-sizing: border-box;
   text-decoration: none;
-  color: rgba(220, 222, 223, 1);
+  color: rgb(255, 232, 255, 1);
   list-style: none;
   font-family: "Pretendard", sans-serif;
 }
+
+.large-full-button {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgb(0, 201, 183, 1);
+  color: rgb(255, 232, 255, 1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  cursor: pointer;
+}
+
+.icon-box {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box-small {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box-large {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button {
+  border-radius: 50% 50%;
+
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+.eye-light-off-icon {
+  background-image: url(assets/images/eye-light-off.png);
+  filter: invert(100%) sepia(0%) saturate(7498%) hue-rotate(320deg)
+    brightness(105%) contrast(101%);
+}
+
+.eye-light-on-icon {
+  background-image: url(assets/images/eye-light-on.png);
+  filter: invert(100%) sepia(0%) saturate(7498%) hue-rotate(320deg)
+    brightness(105%) contrast(101%);
+}
+
+/* #5B356B */
+/* #2B083B */
+/* #FFE8FF */
+/* #00C9B7 */
