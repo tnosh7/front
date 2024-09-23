@@ -1,8 +1,8 @@
 import Logo from "@/assets/Steam_icon_logo.png";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { NavButton } from "../../components/Button";
-import { COM_PATH, GAME_PATH, NEWS_PATH, STORE_PATH } from "../../constants";
+import { AUTH_PATH, COM_PATH, GAME_PATH, NEWS_PATH, STORE_PATH } from "../../constants";
 import "./style.css";
 
 export default function Header() {
@@ -26,16 +26,16 @@ export default function Header() {
   };
 
   return (
-    <header id="header-wrapper">
+    <header id="header">
       <div className="header-container">
-        <div className="logo-wrapper" onClick={onLogoClickHander}>
+        <div className="left-box" onClick={onLogoClickHander}>
           <div className="logo-image-wrapper">
             <img src={Logo} alt="logo" />
           </div>
           <h1>Steaming</h1>
         </div>
 
-        <div className="nav-wrapper">
+        <div className="middle-box">
           <NavButton
             isSelected={selectedNavButton === NEWS_PATH()}
             onSelect={() => onNavButtonClickHandler(NEWS_PATH())}
@@ -57,8 +57,8 @@ export default function Header() {
             title={"STORE"}
           />
         </div>
-        <div className="user-nav-wrapper">
-          <div>로그인</div>
+        <div className="right-box">
+          <Link to={AUTH_PATH()}>로그인</Link>
         </div>
       </div>
     </header>
